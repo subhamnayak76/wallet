@@ -3,10 +3,10 @@ const prisma = new PrismaClient()
 
 async function main() {
   const alice = await prisma.user.upsert({
-    where: { number: '9999999999' },
+    where: { number: '99999999991' },
     update: {},
     create: {
-      number: '9999999999',
+      number: '99999999991',
       password: 'alice',
       name: 'alice',
       OnRampTransaction: {
@@ -24,9 +24,9 @@ async function main() {
     where: { number: '9999999998' },
     update: {},
     create: {
-      number: '9999999998',
-      password: 'bob',
-      name: 'bob',
+      number: '99999999981',
+      password: 'bobs',
+      name: 'bobs',
       OnRampTransaction: {
         create: {
           startTime: new Date(),
